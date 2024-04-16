@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale (LC_ALL, "portuguese"); // Configura a localização para exibir mensagens em português
+    int soma=0; // Declara e inicializa a variável 'soma' como zero
+
+    printf ("Numeros pares existentes até 500\n"); // Imprime uma mensagem indicando o propósito do programa
+
+    // Loop for para iterar de 1 a 500
+    for (int i=1; i<= 500; i++) {
+        // Verifica se o número 'i' é par
+        if (i % 2 == 0) {
+            soma += i; // Se 'i' for par, adiciona-o à variável 'soma'
+        }
+    } 
+    
+    printf
